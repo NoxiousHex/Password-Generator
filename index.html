@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        />
+        <link rel="stylesheet" href="index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <main class="container">
+            <h1 class="title-text">Generate a <span>random password</span></h1>
+            <p class="motto">Never use insecure passwords again.</p>
+            <div class="character-input">
+                <label for="pwd-length"
+                    >Input the desired number of characters:</label
+                >
+                <input type="number" id="pwd-length" min="10" />
+            </div>
+            <label for="numbers-checkbox">Use numbers</label>
+            <input type="checkbox" id="numbers-checkbox" checked />
+            <label for="special-characters-checkbox"
+                >Use special characters</label
+            >
+            <input type="checkbox" id="special-characters-checkbox" checked />
+            <button id="generate-pwd-btn">Generate passwords</button>
+            <div id="pwd-container"></div>
+            <p class="copy-alert" id="copy-success">Copied!</p>
+            <p class="copy-alert" id="copy-failure">Copying failed!</p>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>

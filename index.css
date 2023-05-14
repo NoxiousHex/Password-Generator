@@ -1,0 +1,114 @@
+html,
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background: #1f2937;
+    color: #d5d4d8;
+    padding: 1.5em;
+    user-select: none;
+}
+
+p,
+h1 {
+    margin: 0 0 0.5em;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: "Karla", sans-serif;
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin-top: 1em;
+    color: white;
+}
+
+h1 span {
+    color: #4adf86;
+    display: block;
+}
+
+.motto {
+    font-size: 1.25rem;
+}
+
+.character-input {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="checkbox"],
+button {
+    cursor: pointer;
+    margin: 1em 1em 0 0;
+}
+
+#pwd-length,
+.pwd-element,
+#generate-pwd-btn {
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em;
+}
+
+#pwd-length,
+.pwd-element {
+    background: #273549;
+}
+
+#pwd-length {
+    width: 50px;
+    border: none;
+    color: white;
+}
+
+#pwd-container {
+    margin: 2em 0 0;
+    display: grid;
+    grid-template-columns: 250px 250px;
+    max-width: 550px;
+    grid-gap: 1em 3em;
+    user-select: text;
+}
+
+.pwd-element {
+    display: inline-block;
+    cursor: text;
+}
+
+#generate-pwd-btn {
+    background: #10b981;
+    display: block;
+    margin-top: 2em;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.copy-alert {
+    background: #10b981;
+    display: none;
+    padding: 0.5em 1em;
+    color: white;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+@media (min-width: 550px) {
+    html,
+    body {
+        max-width: 550px;
+        margin: 0 auto;
+    }
+}
